@@ -1,0 +1,18 @@
+﻿# Python virtual environment
+.venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local archives (duplicate project bundles)
+data.zip
+report_revision_files.zip
+
+# OS-generated files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,36 @@
+﻿{
+    "project": "Decision Support Under Uncertainty",
+    "experiment": {
+        "master_seed": 503,
+        "repetitions": 300,
+        "sample_sizes": [5, 10, 30, 100]
+    },
+    "decision_model": {
+        "capacities": [20, 50, 80],
+        "demand_states": [20, 50, 80],
+        "overcapacity_penalty": 0.5,
+        "shortage_penalties": [1.2, 2, 3, 5],
+        "laplace_smoothing_alpha": 1.0,
+        "tie_breaking": "Choose the lowest capacity"
+    },
+    "demand_environments": {
+        "Low demand": [0.70, 0.25, 0.05],
+        "Moderate low-demand": [0.60, 0.30, 0.10],
+        "Balanced": [0.34, 0.33, 0.33],
+        "High demand": [0.20, 0.30, 0.50]
+    },
+    "strategies": [
+        "Expected Cost",
+        "Most Likely State",
+        "Minimax",
+        "Equal Likelihood",
+        "Oracle"
+    ],
+    "evaluation_metrics": [
+        "Mean expected cost",
+        "Standard deviation",
+        "95% confidence interval",
+        "Mean regret",
+        "Oracle agreement"
+    ]
+}
